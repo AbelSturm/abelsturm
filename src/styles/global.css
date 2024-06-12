@@ -1,6 +1,6 @@
 html {
-    background-color: #eff7ff;
-    font-family: sans-serif;
+    background-color: #F2EDE3;
+    font-family: Poppins, sans-serif;
 }
 
 html.dark {
@@ -8,8 +8,8 @@ html.dark {
     color: #fff;
 }
 
-.dark .nav-links a {
-    color: #fff;
+.nav-links a {
+    color: #000000;
 }
 
 body {
