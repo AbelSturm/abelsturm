@@ -31,8 +31,9 @@ This project is licensed under the MIT License. See the LICENSE.md file for deta
 ## TODO List
 - [ ] Finish home page
 - [ ] Finish contact page
-- [ ] Fix mobile view (hamburger)
+- [X] Fix mobile view (hamburger)
 - [ ] Check .css, can be optimized
 - [ ] Check MouseFollower es queda pillat.
+- [ ] Check MouseFollower dissable if IsMobile
 - [ ] Crear CONTRIBUTING.md file.
 - [ ] Crear LICENSE.md file.

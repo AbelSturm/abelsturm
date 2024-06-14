@@ -19,15 +19,12 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
-  <body>
+  <body class="flex flex-col min-h-screen">
     <Header />
-    <main>
+    <main class="flex-grow pl-4 pr-4 md:pl-36 md:pr-0">
       <slot />
     </main>
-    <MouseFollower client:load />
+    <!-- <MouseFollower client:load /> -->    
     <Footer />
-    <script>
-      import "../scripts/menu.js";
-    </script>
   </body>
 </html>

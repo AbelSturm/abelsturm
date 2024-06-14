@@ -3,15 +3,12 @@
 import Hamburger from './Hamburger.astro';
 import Navigation from './Navigation.astro';
 
-//Styles
-import '../../styles/header.css';
-
 ---
-<header class="header">
+<header class="p-4 md:px-36">
     <nav>
-
         <Hamburger />
         <Navigation />
-
     </nav>
+
+    <script type="module" src="/scripts/menu.js"></script>
 </header>
