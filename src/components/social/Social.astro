@@ -1,6 +1,10 @@
 ---
 //Var
 const { platform, username, icon } = Astro.props;
+
+const url = platform === 'linkedin' 
+  ? `https://www.${platform}.com/in/${username}` 
+  : `https://www.${platform}.com/${username}`;
 ---
 
 <a href={`https://www.${platform}.com/in/${username}`} target="_blank" class="p-4 text-[#403d58] no-underline text-xl hover:text-[#177E89] dark:text-[#F2EDE3]" >
