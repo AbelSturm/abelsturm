@@ -1,0 +1,24 @@
+---
+const { platform, username, icon } = Astro.props;
+---
+
+<a href={`https://www.${platform}.com/in/${username}`} target="_blank" class="mini-social-link">
+  <i class={icon}></i>
+</a>
+
+<style>
+  .mini-social-link {
+    padding: 0.5rem;
+    color: #403d58;
+    text-decoration: none;
+    font-size: 1.5rem; /* Adjust the size as needed */
+  }
+  .mini-social-link:hover,
+  .mini-social-link:focus {
+    color: #177E89;
+  }
+
+  html.dark .mini-social-link {
+    color: #F2EDE3;
+  }
+</style>

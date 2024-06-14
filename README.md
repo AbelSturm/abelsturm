@@ -27,3 +27,12 @@ If you'd like to contribute to this project, please follow the guidelines in the
 ## License
 
 This project is licensed under the MIT License. See the LICENSE.md file for details.
+
+## TODO List
+- [ ] Finish home page
+- [ ] Finish contact page
+- [ ] Fix mobile view (hamburger)
+- [ ] Check .css, can be optimized
+- [ ] Check MouseFollower es queda pillat.
+- [ ] Crear CONTRIBUTING.md file.
+- [ ] Crear LICENSE.md file.

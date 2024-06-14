@@ -2,36 +2,27 @@
 //Styles
 import '../styles/global.css';
 
+
 //Components
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Layout from '../layouts/Layout.astro';
 
 //Var
 const pageTitle = "Page not found";
 ---
 
-<html lang="en-GB">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
-		<meta name="viewport" content="width=device-width" />
-		<title>{pageTitle}</title>
-	</head>
+<Layout pageTitle={pageTitle}>
+	<div class="container">
+		<section>
+			<h1>{pageTitle}</h1>
+			<p>
+				Go home&hellip; <a
+					aria-label="Return to home page"
+					href="/"
+					>Click
+				</a>
+			</p>
+		</section>
+	</div>
+</Layout>
 
-	<body>
-        <Header />
-		<main class="container">
-			<section class="content">
-				<h1>{pageTitle}</h1>
-				<p>
-					Go home&hellip; <a
-						aria-label="Return to home page"
-						href="/"
-						>Click
-					</a>
-				</p>
-			</section>
-		</main>
-        <Footer />
-	</body>
-</html>
+

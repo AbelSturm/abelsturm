@@ -1,0 +1,23 @@
+---
+//Var
+const { platform, username, icon } = Astro.props;
+---
+
+<a href={`https://www.${platform}.com/in/${username}`} target="_blank" ><i class={icon}></i> {platform}</a>
+
+<style>
+  a {
+    padding: 1rem 1rem;
+    color: #403d58;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  a:hover,
+  a:focus{
+    color: #177E89;
+  }
+
+  html.dark a {
+    color: #F2EDE3;
+  }
+</style>

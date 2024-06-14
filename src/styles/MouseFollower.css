@@ -8,4 +8,6 @@
   transition: transform 0.1s ease-out, width 0.3s, height 0.3s, box-shadow 0.3s;
   will-change: transform;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  opacity: 0;
 }

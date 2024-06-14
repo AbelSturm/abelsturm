@@ -1,33 +1,14 @@
 ---
 // Styles
+import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 
 //Components
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import MouseFollower from '../components/MouseFollower.tsx';
 
 const pageTitle = "Contacto";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/webp" href="/logo.webp" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-
-        <Header />
-
+<Layout pageTitle={pageTitle}>
 		<h1>{pageTitle}</h1>
+</Layout>
 
-		<MouseFollower client:load />
-
-
-        <Footer />
-
-	</body>
-</html>

@@ -1,0 +1,90 @@
+.nav-links a {
+    color: #403d58;
+}
+
+html.dark .nav-links a {
+    color: #F2EDE3;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #ff9776;
+}
+
+.nav-links {
+    width: 100%;
+    top: 5rem;
+    left: 0;
+    display: none;
+    margin: 0;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center links horizontally */
+}
+
+.nav-links button,
+.nav-links a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #177E89;
+}
+
+.expanded {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 636px) {
+
+    .nav-links {
+        display: flex;
+        position: static;
+        width: auto;
+        background: none;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-links button,
+    .nav-links a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 636px) {
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+}
