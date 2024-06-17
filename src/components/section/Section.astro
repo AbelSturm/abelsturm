@@ -1,9 +1,11 @@
 ---
+//Components
+import Title from "../title/Title.astro";
 
 const { sectionTitle } = Astro.props;
 ---
 
 <div class="section">
-  <h2>{sectionTitle}</h2>
+  <Title>{sectionTitle}</Title>
   <slot />
 </div>
