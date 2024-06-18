@@ -1,0 +1,10 @@
+---
+//Var
+const { title, content } = Astro.props;
+---
+
+<div class="box bg-[#403d58] dark:bg-[#F2EDE3] text-[#F2EDE3] dark:text-[#403d58] p-6 m-3 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105 dark:filter dark:brightness-90">
+    <h3 class="text-xl mb-4">{title}</h3>
+    <hr class="border-[#F2EDE3] dark:border-[#403d58] mb-4"/>
+    <p class="text-lg text-[#F2EDE3] dark:text-[#403d58]">{content}</p>
+  </div>

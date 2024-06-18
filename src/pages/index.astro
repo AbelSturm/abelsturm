@@ -7,13 +7,15 @@ import {Image} from 'astro:assets'
 import Section from '../components/section/Section.astro';
 import MiniSocial from '../components/social/MiniSocial.astro';
 import Tecno from '../components/tecnologis/Tecno.astro';
+import SobreMi from '../components/sobremi/SobreMi.astro';
+import Hobbie from '../components/hobbies/Hobbie.astro';
 
 //Var
 const pageTitle = "Abel Sturm";
 ---
 <Layout pageTitle={pageTitle}>
 
-  <div class="flex justify-between text-center md:text-left w-full pt-5 pb-20 md:pt-20 md:pb-40 flex-col md:flex-row md:items-center">
+  <div class="flex justify-between text-center md:text-left w-full pt-5 pb-10 md:pt-20 md:pb-40 flex-col md:flex-row md:items-center">
     <div class="mb-10 md:mt-auto md:mb-auto">
       <h1 class="my-4 text-4xl md:text-8xl">{pageTitle}</h1>
       <p>¡Hola! Soy Abel Sturm, un desarrollador web de España.</p>
@@ -31,14 +33,25 @@ const pageTitle = "Abel Sturm";
     </div>
   </div>
 
-  <Section sectionTitle="Sobre mi" class="pt-12 pb-12">
-    <div>
-
+  <Section sectionTitle="Sobre mi">
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 md:pr-36 md:my-4">
+      <div class="grid gap-8 md:col-span-1 lg:col-span-2">
+        <SobreMi title="Sobre mi" content="Soy un desarrollador web de España. Me encanta aprender cosas nuevas. Actualmente estoy trabajando en proyectos personales y en una buena empresa que dessarolla software."/>
+        <SobreMi title="Experiencia" content="He trabajado en varios proyectos, tanto personales como profesionales. He trabajado con tecnologías como HTML, CSS, JavaScript, Node.js, Angular, React, PHP, entre otras."/>
+        <SobreMi title="Educación" content="Estudié varios grados de Informatica. También he realizado varios cursos online sobre desarrollo web y tecnologías relacionadas."/>
+        </div>
+        <div class="grid gap-8">
+          <SobreMi title="Hobbies">
+            <Hobbie title="Escalada" content="Me encanta escalar. Es un deporte que me ayuda a desconectar."/>
+            <Hobbie title="Leer" content="Me encanta leer. Me gusta leer principalmente novelas de fantasía."/>
+            <Hobbie title="Música" content="Me gusta escuchar música de todo tipo y tocar el piano."/>
+          </SobreMi>
+        </div>
     </div>
   </Section>
 
-  <Section sectionTitle="Tecnologias" class="pt-12 pb-12">
-    <div class="card grid-cols-2 md:grid-cols-5 grid gap-2 md:pr-36 md:my-8">
+  <Section sectionTitle="Tecnologias">
+    <div class="card grid-cols-2 md:grid-cols-5 grid gap-2 md:pr-36 md:my-4">
       <Tecno name="HTML" icon="fab fa-html5"/>
       <Tecno name="CSS" icon="fab fa-css3-alt"/>
       <Tecno name="Tailwind" icon="fas fa-wind"/>
