@@ -7,22 +7,25 @@ import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 
 //Var
-const pageTitle = "Page not found";
+const pageTitle = "404 Not Found :(";
 ---
 
 <Layout pageTitle={pageTitle}>
-	<div class="container">
-		<section>
-			<h1>{pageTitle}</h1>
-			<p>
-				Go home&hellip; <a
-					aria-label="Return to home page"
-					href="/"
-					>Click
-				</a>
-			</p>
-		</section>
+	<div class="container mx-auto text-center py-20">
+	  <section class="md:p-10">
+		<h1 class="text-4xl md:text-6xl font-bold mb-4 text--[#403d58] dark:text-[#F2EDE3]">{pageTitle}</h1>
+		<p class="text-lg md:text-xl text-[#403d58] dark:text-[#F2EDE3]">
+		  Go home&hellip; 
+		  <a
+			aria-label="Return to home page"
+			href="/"
+			class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 underline"
+		  >
+			Click
+		  </a>
+		</p>
+	  </section>
 	</div>
-</Layout>
+  </Layout>
 
 
